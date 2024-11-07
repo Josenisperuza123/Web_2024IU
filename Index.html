@@ -4,41 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a mi primera página web </h1>
+       <h1>Hoja de Vida de José Domingo Nisperuza Arroyo</h1> 
+
         <nav>
+
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+
+                <li><a href="#formacion">Formación Académica</a></li>         
+                <li><a href="#experiencia">Experiencia Laboral</a></li>
+                <li><a href="#redes">Redes Sociales</a></li>
+                <li><a href="#Contactenos">Contactenos</a></li>
+                    
+            </ul> 
         </nav>
+     
     </header>
+    
+        <section id="formacion">
+            <h2>Formación Académica</h2>
+            <table>
+        
+                <tr>
+                    <th>Institución</th>
+                    <th>Título Obtenido</th>
+                    <th>Año de Graduación</th>
+                </tr>
+   
+                <tr>
+                    <td>Universidad Digital De Antioquia</td>
+                    <td>Tecnologia en Desarrollo de Software.</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Alura Latam +ONE Oracle.</td>
+                    <td>Especialización Desarrollador Back-end</td>
+                    <td>2023</td>
+                </tr>
+            </table>
+        </section>
 
-    <section class="hero">
-        <h2>Diseño moderno y adaptable</h2>
-        <p>Descubre cómo mejorar tu presencia en línea con nuestra ayuda.</p>
-        <button>¡Contáctarnos!</button>
-    </section>
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+            <table>
+                <tr>
+                    <th>Empresa</th>
+                    <th>Puesto</th> 
+                    <th>Período</th>
+                    <br>
+                </tr>
 
-    <section class="servicios">
-        <h2>Nuestros Servicios</h2>
-        <div class="servicio">
-            <h3>Desarrollo Web</h3>
-            <p>Construimos sitios dinámicos y de exelente calidad.</p>
-        </div>
-        <div class="servicio">
-            <h3>Marketing Digital</h3>
-            <p>Potencia tu marca en las plataformas digitales.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
-    </footer>
+                <tr>
+                    <td>Freelance</td>
+                    <td>Analisista Digital</td>
+                    <td>Marzo- Agosto/2023</td>
+                </tr>
+            </table>
+        </section>
+    
+        <section id="redes">
+            <h2>Redes Sociales</h2>
+            <div class="redes-container">
+                <a href="https://www.linkedin.com/in/josé-domingo-nisperuza-arroyo-00b378308" target="_blank" class="social-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Josenisperuza123" target="_blank" class="social-btn github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.instagram.com/josenisperuzaarroyo/profilecard/?igsh=MXQ1azV5ODG0MmZuMg==" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </section>
+    
+        <section id="Contactenos">
+            <h2>Contactenos</h2>
+            <form action="mailto:[tu-email@example.com]" method="post" enctype="text/plain">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="mensaje">Mensaje:</label>
+                <br><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                <br>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 IU Digital De Antioquia.Derechos son Reservados</p>
+        </footer>
 </body>
 </html>

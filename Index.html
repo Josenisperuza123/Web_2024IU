@@ -3,95 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
+    <title>Hojas de Vidas </title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
-<body>
-    <header>
-       <h1>Hoja de Vida de José Domingo Nisperuza Arroyo</h1> 
+<body style="background-color: beige;">
 
-        <nav>
+    <div id="main_wrapper">
 
-            <ul>
-
-                <li><a href="#formacion">Formación Académica</a></li>         
-                <li><a href="#experiencia">Experiencia Laboral</a></li>
-                <li><a href="#redes">Redes Sociales</a></li>
-                <li><a href="#Contactenos">Contactenos</a></li>
-                    
-            </ul> 
-        </nav>
-     
-    </header>
-    
-        <section id="formacion">
-            <h2>Formación Académica</h2>
-            <table>
-        
-                <tr>
-                    <th>Institución</th>
-                    <th>Título Obtenido</th>
-                    <th>Año de Graduación</th>
-                </tr>
-   
-                <tr>
-                    <td>Universidad Digital De Antioquia</td>
-                    <td>Tecnologia en Desarrollo de Software.</td>
-                    <td>2024</td>
-                </tr>
-                <tr>
-                    <td>Alura Latam +ONE Oracle.</td>
-                    <td>Especialización Desarrollador Back-end</td>
-                    <td>2023</td>
-                </tr>
-            </table>
-        </section>
-
-        <section id="experiencia">
-            <h2>Experiencia Laboral</h2>
-            <table>
-                <tr>
-                    <th>Empresa</th>
-                    <th>Puesto</th> 
-                    <th>Período</th>
-                    <br>
-                </tr>
-
-                <tr>
-                    <td>Freelance</td>
-                    <td>Analisista Digital</td>
-                    <td>Marzo- Agosto/2023</td>
-                </tr>
-            </table>
-        </section>
-    
-        <section id="redes">
-            <h2>Redes Sociales</h2>
-            <div class="redes-container">
-                <a href="https://www.linkedin.com/in/josé-domingo-nisperuza-arroyo-00b378308" target="_blank" class="social-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/Josenisperuza123" target="_blank" class="social-btn github"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.instagram.com/josenisperuzaarroyo/profilecard/?igsh=MXQ1azV5ODG0MmZuMg==" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <header>
+            <div id="main_title">
+                <h1>Hoja de Vida de José Domingo Nisperuza Arroyo</h1>
             </div>
-        </section>
     
-        <section id="Contactenos">
-            <h2>Contactenos</h2>
-            <form action="mailto:[tu-email@example.com]" method="post" enctype="text/plain">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <br><br>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
-                <label for="mensaje">Mensaje:</label>
-                <br><br>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+            <nav>
+                <ul>
+            
+                    <li><a href="#formacion">Formación Académica</a></li>
+                    <li><a href="#experiencia">Experiencia Laboral</a></li>
+                    <li><a href="#redes">Redes Sociales</a></li>
+                    <li><a href="#Contactenos">Contactenos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <article>
+                <h2>Acerca de mi</h2>
+                <img src="Images/PhotoJose.jpg" alt="Imagen de José Domingo" width="150">
+                <p>Hola, soy José Domingo Nisperuza Arroyo, tengo 20 Años de edad; actualmente me encuentro finalizando mi carrera en Desarrollo de Software y cuento con poca experiencia en el area de desarrollo web.</p>
                 <br>
-                <button type="submit">Enviar Mensaje</button>
-            </form>
+                <p>Me encanta aprender sobre nuevas tecnologias y compartir el conocimiento que hasta el momento he adquirido. Mi objetivo es convertirme en experto en tecnologias web.</p>
+            </article>
+
+            <article id="formacion">
+                <h2>Formación Académica</h2>
+                <table>
+                    <tr>
+                        <th>Institución</th>
+                        <th>Título Obtenido</th>
+                        <th>Año de Graduación</th>
+                    </tr>
+                    <tr>
+                        <td>Universidad Digital De Antioquia</td>
+                        <td>Tecnología en Desarrollo de Software</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Alura Latam +ONE Oracle</td>
+                        <td>Especialización Desarrollador Back-end</td>
+                        <td>2023</td>
+                    </tr>
+                </table>
+            </article>
+
+            <article id="experiencia">
+                <h2>Experiencia Laboral</h2>
+                <table>
+                    <tr>
+                        <th>Empresa</th>
+                        <th>Puesto</th>
+                        <th>Período</th>
+                    </tr>
+                    <tr>
+                        <td>Freelance</td>
+                        <td>Analista Digital</td>
+                        <td>Marzo - Agosto 2023</td>
+                    </tr>
+
+                    <tr>
+                        <td>Company ODS</td>
+                        <td> Desarrollador De Software</td>
+                        <td>2023 - Actualidad</td>
+                    </tr>
+                </table>
+            </article>
+
+            <section id="redes">
+                <h2>Redes Sociales</h2>
+                <div class="redes-container">
+                    <a href="https://www.linkedin.com/in/josé-domingo-nisperuza-arroyo-00b378308" target="_blank" class="social-btn linkedin">
+                        <img src="Images/linkedin.png" alt="LinkedIn" width="40"> LinkedIn
+                    </a>
+                    <a href="https://github.com/Josenisperuza123/Web_2024IU/blob/feature/2024" target="_blank" class="social-btn github">
+                        <img src="Images/Github.jpg" alt="GitHub" width="40"> GitHub
+                    </a>
+                    <a href="https://www.instagram.com/josenisperuzaarroyo/profilecard/?igsh=MXQ1azV5ODG0MmZuMg==" target="_blank" class="social-btn instagram">
+                        <img src="Images/Instagram.png" alt="Instagram" width="40"> Instagram
+                    </a>
+                    
+                </div>
+            </section>
+
+            <section id="Contactenos">
+                <h2>Contáctenos</h2>
+                <form action="mailto:tu-email@example.com" method="post" enctype="text/plain">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="mensaje">Mensaje:</label><br><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </section>
+
         </section>
+        <br><br>
+        <br><br>
+        
+
         <footer>
-            <p>&copy; 2024 IU Digital De Antioquia.Derechos son Reservados</p>
+            <p>&copy; 2022 Company ODS.Todos Los Derechos Son Reservados.</p>
         </footer>
+
+    </div> 
+
 </body>
 </html>
